@@ -15,8 +15,9 @@ def get_db():
         host=os.environ.get("DB_HOST", "localhost"),
         port=int(os.environ.get("DB_PORT", 3306)),
         user=os.environ.get("DB_USER", "root"),
-        password=os.environ.get("DB_PASSWORD", "root@2007"),
+        password=os.environ.get("DB_PASSWORD", " "),
         database=os.environ.get("DB_NAME", "snipvault_db")
+        ssl_disabled=False
     )
 
 # ---------- STOP WORDS ----------
